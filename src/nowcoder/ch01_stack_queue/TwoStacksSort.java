@@ -5,7 +5,7 @@ import java.util.Stack;
 
 /**
  * 编写一个程序，按升序对栈进行排序（即最大元素位于栈顶），最多只能使用一个额外的栈存放临时数据。
- * <p>
+ *
  * 思路：要排序的栈记为stack，，在构建一个辅助栈，在stack上执行pop操作，弹出元素记为cur
  * 如果cur小于等于help栈顶元素，则将cur压入help，如果cur大于help栈顶元素，就将help中的元素一一弹出，
  * 直到cur的值小于等于help的栈顶元素，在将cur压入help。
